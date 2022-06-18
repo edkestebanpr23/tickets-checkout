@@ -71,6 +71,10 @@ module.exports = {
         'import/prefer-default-export': 'off',
         'import/extensions': ['error', 'ignorePackages', {
             js: 'never', jsx: 'never', ts: 'never', tsx: 'never'
+        }],
+        'react/function-component-definition': [2, {
+            namedComponents: 'arrow-function',
+            unnamedComponents: 'arrow-function'
         }]
     // 'react/prop-types': 'off'
     }
