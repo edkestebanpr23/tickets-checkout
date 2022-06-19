@@ -1,5 +1,7 @@
 import * as React from 'react';
-import { Grid, makeStyles, Typography } from '@mui/material';
+import {
+  Button, Grid, makeStyles, Typography
+} from '@mui/material';
 import './styles.scss';
 import ListCategories from '../../organism/list-categories';
 
@@ -20,8 +22,29 @@ const Body = ({ children }: Props): JSX.Element => {
             <Grid item xs={12} className="Card">
               <Grid container>
                 <Grid item xs={4} className="image" />
-                <Grid item xs={8} className="body">
-                    <Typography>Shakira</Typography>
+                <Grid item xs={5} className="body">
+                  <Typography variant="h5" className="title">
+                    Shakira
+                  </Typography>
+                  <Grid className="location">
+                    <Typography variant="h6" className="place">
+                      Atanasio Girardot Stadium
+                    </Typography>
+                    <Typography variant="body1" className="country">
+                      Medellin - Colombia
+                    </Typography>
+                  </Grid>
+                </Grid>
+                <Grid item xs={3} className="body">
+                  <Typography variant="body1" className="hour">
+                    5:30 pm
+                  </Typography>
+                  <Typography variant="body1" className="date">
+                    May 10
+                  </Typography>
+                  <Grid className="btn-ctn">
+                    <Button variant="contained">Buy tickets</Button>
+                  </Grid>
                 </Grid>
               </Grid>
             </Grid>
