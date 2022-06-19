@@ -38,7 +38,7 @@ module.exports = {
         // 'import/prefer-default-export': 0,
         indent: ['error', 4, { SwitchCase: 1, ignoredNodes: ['JSXElement'] }],
         'max-len': [1, 120, 2, { ignoreComments: true }],
-        'no-console': ['error'],
+        'no-console': 'off',
         // 'no-shadow': 0,
         'no-param-reassign': ['error', { props: false }],
         'no-undef': 0,
@@ -75,7 +75,15 @@ module.exports = {
         'react/function-component-definition': [2, {
             namedComponents: 'arrow-function',
             unnamedComponents: 'arrow-function'
-        }]
+        }],
+        'no-restricted-syntax': [
+            'error',
+            {
+                // eslint-disable-next-line max-len
+                selector: "CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]",
+                message: 'Unexpected property on console object was called'
+            }
+        ]
     // 'react/prop-types': 'off'
     }
 };
