@@ -1,0 +1,30 @@
+[
+    {
+        "category": "Familiar",
+        "subCategories": [
+            {
+                "category": "Circus/ Magic/ Illusion"
+            },
+            {
+                "category": "Children's Music"
+            },
+            {
+                "category": "Puppetry"
+            }
+        ]
+    },
+    {
+        "category": "Concerts",
+        "subCategories": [
+            {
+                "category": "Latin"
+            },
+            {
+                "category": "Children's Music"
+            },
+            {
+                "category": "Pop"
+            }
+        ]
+    }
+]
