@@ -11,13 +11,16 @@ const Body = ({ children }: Props): JSX.Element => {
   return (
         <Grid
           container
-          sx={{
-            background: 'primary.main'
-          }}
           className="Body"
         >
-            <Grid className="container">
-                {children}
+            <Grid container className="container">
+                <Grid item xs={4} className="container-left">
+                    {/* {children} */}
+                </Grid>
+                <Grid item xs={8} className="container-rigth">
+                    {/* {children} */}
+                </Grid>
+
             </Grid>
         </Grid>
   );
