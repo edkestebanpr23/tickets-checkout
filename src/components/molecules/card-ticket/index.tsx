@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Button, Grid, Typography } from '@mui/material';
 import './styles.scss';
+import { Ticket } from '../../../services/tickets';
 
 type Props = {
   ticket: {
@@ -16,7 +17,8 @@ type Props = {
 };
 
 const CardTicket = ({ ticket, categorie, subcategory }: Props): JSX.Element => {
-  console.log(1);
+  const tickes = new Ticket().getTicketsByCategory('Familiar', 'Circus/ Magic/ Illusion');
+  console.log();
   return (
     <Grid container>
       <Grid item xs={12} className="Card">
