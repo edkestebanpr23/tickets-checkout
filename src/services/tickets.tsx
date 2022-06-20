@@ -15,7 +15,6 @@ export class Ticket {
   ): SubCategoriesInterface[] {
     try {
       if (category && subcategory) {
-        console.log('Peticion:', category, subcategory);
         const categoryFiltered: CategoryInterface = this.ticketsDataBase.filter(cat => cat.category === category)[0];
         const subcategoryFiltered: SubCategoriesInterface[] = categoryFiltered.subCategories.filter(sub => sub.id === subcategory);
         return subcategoryFiltered;

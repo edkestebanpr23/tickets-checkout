@@ -27,7 +27,6 @@ const TicketContainer = ({ category, subcategory }: Props): JSX.Element => {
     }
   }, [category, subcategory]);
 
-  console.log('tickets', tikets);
   return (
     <Grid container className="TicketContainer">
       {

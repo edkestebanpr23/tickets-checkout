@@ -16,7 +16,6 @@ const {
 } = config;
 
 const ListCategories = (): JSX.Element => {
-  console.log(categories);
   const [open, setOpen] = React.useState<boolean>(true);
 
   const handleClick = () => {
