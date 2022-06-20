@@ -14,9 +14,12 @@ export class Ticket {
     subcategory: string
   ): SubCategoriesInterface[] {
     try {
-      const categoryFiltered: CategoryInterface = this.ticketsDataBase.filter(cat => cat.category === category)[0];
-      const subcategoryFiltered: SubCategoriesInterface[] = categoryFiltered.subCategories.filter(sub => sub.category === subcategory);
-      return subcategoryFiltered;
+      if (category && subcategory) {
+        const categoryFiltered: CategoryInterface = this.ticketsDataBase.filter(cat => cat.category === category)[0];
+        const subcategoryFiltered: SubCategoriesInterface[] = categoryFiltered.subCategories.filter(sub => sub.id === subcategory);
+        return subcategoryFiltered;
+      }
+      return [];
     } catch (error) {
       console.log(error);
       return [];

@@ -4,6 +4,7 @@
         "subCategories": [
             {
                 "category": "Circus/ Magic/ Illusion",
+                "id": "1",
                 "events": [
                     {
                         "event": "Imperial Circus",
@@ -36,6 +37,7 @@
             },
             {
                 "category": "Children's Music",
+                "id": "2",
                 "events": [
                     {
                         "event": "Frozen, A Musical Spectacular",
@@ -73,6 +75,7 @@
         "subCategories": [
             {
                 "category": "Latin",
+                "id": "3",
                 "events": [
                     {
                         "event": "Shakira",
@@ -90,11 +93,11 @@
                         "hour": "20:00 hrs",
                         "date": "Sep 14",
                         "id": "2",
-                        "image": "https://i0.wp.com/plus.cusica.com/wp-content/uploads/2017/01/carlos-vives-cusica-plus.jpg?fit=2000%2C1335&ssl=1"
+                        "image": "https://ca-times.brightspotcdn.com/dims4/default/6b1a7e4/2147483647/strip/true/crop/2337x1635+0+0/resize/840x588!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F70%2Fbc%2Fca0e687cdbea6aa4449e0ea8cce3%2Fff17148acbaf44f692b89a7903937e8a"
                     },
                     {
                         "event": "Romeo Santos",
-                        "place": "Nemesio Camacho El Campín",
+                        "place": "El Campín Stadium",
                         "location": "Bogotá - Colombia",
                         "hour": "18:00 hrs",
                         "date": "Sep 16",
@@ -105,6 +108,7 @@
             },
             {
                 "category": "Children's Music",
+                "id": "4",
                 "events": [
                     {
                         "event": "Frozen, A Musical Spectacular",
@@ -137,10 +141,11 @@
             },
             {
                 "category": "Pop",
+                "id": "5",
                 "events": [
                     {
                         "event": "Lady Gaga",
-                        "place": "Nemesio Camacho El Campín",
+                        "place": "El Campín Stadium",
                         "location": "Bogotá - Colombia",
                         "hour": "19:30 hrs",
                         "date": "Aug 12",
@@ -148,13 +153,13 @@
                         "image": "https://as01.epimg.net/epik/imagenes/2020/01/29/portada/1580322761_362296_1580322908_noticia_normal_recorte1.jpg"
                     },
                     {
-                        "event": "Justin",
+                        "event": "Justin Bieber",
                         "place": "Salitre Mágico",
                         "location": "Bogotá - Colombia",
                         "hour": "20:00 hrs",
                         "date": "Dec 14",
                         "id": "2",
-                        "image": "https://as01.epimg.net/epik/imagenes/2020/01/29/portada/1580322761_362296_1580322908_noticia_normal_recorte1.jpg"
+                        "image": "https://www.puroshow.com/u/fotografias/m/2021/4/11/f608x342-15057_44780_126.jpg"
                     },
                     {
                         "event": "Ariana Grande",

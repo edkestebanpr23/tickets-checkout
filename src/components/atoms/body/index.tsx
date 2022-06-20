@@ -1,18 +1,14 @@
 import * as React from 'react';
-import {
-  Button, Grid, makeStyles, Typography
-} from '@mui/material';
+import { Grid } from '@mui/material';
 import './styles.scss';
 import ListCategories from '../../organism/list-categories';
 import TicketContainer from '../../molecules/ticket-container';
-import { Ticket } from '../../../services/tickets';
+import { useSelector } from 'react-redux';
 
-type Props = {
-  children: JSX.Element;
-};
+const Body = (): JSX.Element => {
+  const category = useSelector((state: any) => state.tickets.category);
+  const subcategory = useSelector((state: any) => state.tickets.subcategory);
 
-const Body = ({ children }: Props): JSX.Element => {
-  const tickes = new Ticket().getTicketsByCategory('Familiar', 'Circus/ Magic/ Illusion');
   return (
     <Grid container className="Body">
       <Grid container className="container">
@@ -22,7 +18,7 @@ const Body = ({ children }: Props): JSX.Element => {
         <Grid item xs={8} className="container-rigth">
           <Grid container>
             <Grid item xs={12}>
-              <TicketContainer category="Familiar" subcategory="Circus/ Magic/ Illusion" />
+              <TicketContainer category={category} subcategory={subcategory} />
             </Grid>
           </Grid>
         </Grid>

@@ -13,9 +13,19 @@ import ListItem from '../../atoms/list-item';
 interface ListGroupProps {
   category: {
     category: string;
-    subCategories?: {
-      category: string;
-    }[] | [];
+    subCategories?:
+      | {
+          category: string;
+          id: string;
+        }[]
+      | [];
+  };
+}
+
+interface ListGroupInterface {
+  category: {
+    category: string;
+    subcategory: string;
   };
 }
 
@@ -36,7 +46,14 @@ const ListGroup = ({ category }: ListGroupProps): JSX.Element => {
         <Collapse in={open} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>
             {category?.subCategories?.map((subCategory) => (
-              <ListItem category={subCategory} key={subCategory.category} />
+              <ListItem
+                category={{
+                  subcategory: subCategory.category,
+                  category: category.category,
+                  idSubcategory: subCategory.id
+                }}
+                key={subCategory.category}
+              />
             ))}
           </List>
         </Collapse>
