@@ -12,16 +12,14 @@ export class Ticket {
   public getTicketsByCategory(
     category: string,
     subcategory: string
-  ): void {
+  ): SubCategoriesInterface[] {
     try {
       const categoryFiltered: CategoryInterface = this.ticketsDataBase.filter(cat => cat.category === category)[0];
-      console.log('cat', categoryFiltered);
       const subcategoryFiltered: SubCategoriesInterface[] = categoryFiltered.subCategories.filter(sub => sub.category === subcategory);
-      console.log('sub', subcategoryFiltered);
-    //   const { events }: TicketInterface[] = subcategoryFiltered;
-    //   return subcategoryFiltered.events;
+      return subcategoryFiltered;
     } catch (error) {
       console.log(error);
+      return [];
     }
   }
 }

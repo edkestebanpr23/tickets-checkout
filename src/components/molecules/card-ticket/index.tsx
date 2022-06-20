@@ -11,19 +11,18 @@ type Props = {
     hour: string;
     date: string;
     id: string;
+    image: string;
   },
   categorie: string;
   subcategory: string;
 };
 
 const CardTicket = ({ ticket, categorie, subcategory }: Props): JSX.Element => {
-  const tickes = new Ticket().getTicketsByCategory('Familiar', 'Circus/ Magic/ Illusion');
   console.log();
   return (
-    <Grid container>
       <Grid item xs={12} className="Card">
         <Grid container>
-          <Grid item xs={4} className="image" />
+          <Grid item xs={4} className="image" style={{ backgroundImage: `url("${ticket.image}")` }} />
           <Grid item xs={5} className="body">
             <Typography variant="h5" className="title">
               {ticket.event}
@@ -50,7 +49,6 @@ const CardTicket = ({ ticket, categorie, subcategory }: Props): JSX.Element => {
           </Grid>
         </Grid>
       </Grid>
-    </Grid>
   );
 };
 

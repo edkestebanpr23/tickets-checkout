@@ -5,6 +5,7 @@ export interface TicketInterface {
   hour: string;
   date: string;
   id: string;
+  image: string;
 }
 
 export interface SubCategoriesInterface {
