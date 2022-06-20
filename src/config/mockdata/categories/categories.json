@@ -1,0 +1,172 @@
+[
+    {
+        "category": "Familiar",
+        "subCategories": [
+            {
+                "category": "Circus/ Magic/ Illusion",
+                "events": [
+                    {
+                        "event": "Imperial Circus",
+                        "place": "Cra 3 # 12 - 15",
+                        "location": "Tunja - Colombia",
+                        "hour": "16:00 hrs",
+                        "date": "Jul 20",
+                        "id": "1",
+                        "image": "https://boyaca7dias.com.co/wp-content/uploads/2021/10/el-gran-circo-edited.jpg"
+                    },
+                    {
+                        "event": "Dark Magician",
+                        "place": "Los Sauces Park",
+                        "location": "Cali - Colombia",
+                        "hour": "17:30 hrs",
+                        "date": "Nov 1",
+                        "id": "2",
+                        "image": "https://cdn.create.vista.com/api/media/small/336385582/stock-photo-professional-magician-suit-hat-looking"
+                    },
+                    {
+                        "event": "Castillo del Terror",
+                        "place": "Salitre Mágico",
+                        "location": "Bogotá - Colombia",
+                        "hour": "14:00 hrs",
+                        "date": "Nov 4",
+                        "id": "3",
+                        "image": "https://ventaspop-images.staticgnt.com/H0YuDwjYXcgWNb7945nYtl0hU1c=/filters:strip_exif():quality(70)/files/galleries/512/14/CASTILLODELTERROR02_INFERIOR_560X321px-min.jpg"
+                    }
+                ]
+            },
+            {
+                "category": "Children's Music",
+                "events": [
+                    {
+                        "event": "Frozen, A Musical Spectacular",
+                        "place": "Pablo Tobon Auditorium",
+                        "location": "Medellín - Colombia",
+                        "hour": "14:30 hrs",
+                        "date": "Aug 15",
+                        "id": "1",
+                        "image": "https://lumiere-a.akamaihd.net/v1/images/musical-frozen-5x2_db7a057f.png"
+                    },
+                    {
+                        "event": "Frozen, A Musical Spectacular",
+                        "place": "Pablo Tobon Auditorium",
+                        "location": "Medellín - Colombia",
+                        "hour": "14:30 hrs",
+                        "date": "Aug 15",
+                        "id": "2",
+                        "image": "https://lumiere-a.akamaihd.net/v1/images/musical-frozen-5x2_db7a057f.png"
+                    },
+                    {
+                        "event": "Rey León Musical",
+                        "place": "Movistar Arena",
+                        "location": "Bogotá - Colombia",
+                        "hour": "17:00 hrs",
+                        "date": "Jul 22",
+                        "id": "3",
+                        "image": "https://cloudfront-us-east-1.images.arcpublishing.com/semana/UYCHPHRLBZHADJZV5VMDPP7YV4.jpg"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Concerts",
+        "subCategories": [
+            {
+                "category": "Latin",
+                "events": [
+                    {
+                        "event": "Shakira",
+                        "place": "Atanasio Girardot Stadium",
+                        "location": "Medellín - Colombia",
+                        "hour": "17:30 hrs",
+                        "date": "Aug 10",
+                        "id": "1",
+                        "image": "https://depor.com/resizer/HQgjD5K6SDwjYkurI7FLcucvR00=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/H42EXSOSQVCQ7HWEAIFVJNKH2Y.jpg"
+                    },
+                    {
+                        "event": "Carlos Vives",
+                        "place": "Movistar Arena",
+                        "location": "Bogotá - Colombia",
+                        "hour": "20:00 hrs",
+                        "date": "Sep 14",
+                        "id": "2",
+                        "image": "https://i0.wp.com/plus.cusica.com/wp-content/uploads/2017/01/carlos-vives-cusica-plus.jpg?fit=2000%2C1335&ssl=1"
+                    },
+                    {
+                        "event": "Romeo Santos",
+                        "place": "Nemesio Camacho El Campín",
+                        "location": "Bogotá - Colombia",
+                        "hour": "18:00 hrs",
+                        "date": "Sep 16",
+                        "id": "3",
+                        "image": "https://caracol.com.co/radio/imagenes/2019/04/05/entretenimiento/1554467732_901330_1554468091_miniatura_normal.jpg"
+                    }
+                ]
+            },
+            {
+                "category": "Children's Music",
+                "events": [
+                    {
+                        "event": "Frozen, A Musical Spectacular",
+                        "place": "Pablo Tobon Auditorium",
+                        "location": "Medellín - Colombia",
+                        "hour": "14:30 hrs",
+                        "date": "Aug 15",
+                        "id": "1",
+                        "image": "https://lumiere-a.akamaihd.net/v1/images/musical-frozen-5x2_db7a057f.png"
+                    },
+                    {
+                        "event": "Frozen, A Musical Spectacular",
+                        "place": "Pablo Tobon Auditorium",
+                        "location": "Medellín - Colombia",
+                        "hour": "14:30 hrs",
+                        "date": "Aug 15",
+                        "id": "2",
+                        "image": "https://lumiere-a.akamaihd.net/v1/images/musical-frozen-5x2_db7a057f.png"
+                    },
+                    {
+                        "event": "Rey Leon Musical",
+                        "place": "Movistar Arena",
+                        "location": "Bogotá - Colombia",
+                        "hour": "17:00 hrs",
+                        "date": "Jul 22",
+                        "id": "3",
+                        "image": "https://cloudfront-us-east-1.images.arcpublishing.com/semana/UYCHPHRLBZHADJZV5VMDPP7YV4.jpg"
+                    }
+                ]
+            },
+            {
+                "category": "Pop",
+                "events": [
+                    {
+                        "event": "Lady Gaga",
+                        "place": "Nemesio Camacho El Campín",
+                        "location": "Bogotá - Colombia",
+                        "hour": "19:30 hrs",
+                        "date": "Aug 12",
+                        "id": "1",
+                        "image": "https://as01.epimg.net/epik/imagenes/2020/01/29/portada/1580322761_362296_1580322908_noticia_normal_recorte1.jpg"
+                    },
+                    {
+                        "event": "Justin",
+                        "place": "Salitre Mágico",
+                        "location": "Bogotá - Colombia",
+                        "hour": "20:00 hrs",
+                        "date": "Dec 14",
+                        "id": "2",
+                        "image": "https://as01.epimg.net/epik/imagenes/2020/01/29/portada/1580322761_362296_1580322908_noticia_normal_recorte1.jpg"
+                    },
+                    {
+                        "event": "Ariana Grande",
+                        "place": "Atanasio Girardot Stadium",
+                        "location": "Medellín - Colombia",
+                        "hour": "17:00 hrs",
+                        "date": "Aug 23",
+                        "id": "3",
+                        "image": "https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/01/21131856/Ariana-Grande-3.jpg"
+                    }
+                ]
+            }
+        ]
+    }
+]
