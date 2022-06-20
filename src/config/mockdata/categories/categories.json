@@ -4,6 +4,7 @@
         "subCategories": [
             {
                 "category": "Circus/ Magic/ Illusion",
+                "id": "1",
                 "events": [
                     {
                         "event": "Imperial Circus",
@@ -36,6 +37,7 @@
             },
             {
                 "category": "Children's Music",
+                "id": "2",
                 "events": [
                     {
                         "event": "Frozen, A Musical Spectacular",
@@ -73,6 +75,7 @@
         "subCategories": [
             {
                 "category": "Latin",
+                "id": "3",
                 "events": [
                     {
                         "event": "Shakira",
@@ -105,6 +108,7 @@
             },
             {
                 "category": "Children's Music",
+                "id": "4",
                 "events": [
                     {
                         "event": "Frozen, A Musical Spectacular",
@@ -137,6 +141,7 @@
             },
             {
                 "category": "Pop",
+                "id": "5",
                 "events": [
                     {
                         "event": "Lady Gaga",

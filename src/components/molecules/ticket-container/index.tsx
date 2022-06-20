@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Button, Grid, makeStyles, Typography
 } from '@mui/material';
@@ -14,17 +14,25 @@ type Props = {
 };
 
 const TicketContainer = ({ category, subcategory }: Props): JSX.Element => {
-  const tickes: SubCategoriesInterface = new Ticket().getTicketsByCategory(
-    category,
-    subcategory
-  )[0];
+  const [tikets, setTickets] = useState<SubCategoriesInterface>();
 
-  console.log('tickets', tickes);
+  useEffect(() => {
+    if (category !== '' && subcategory !== '') {
+      setTickets(undefined);
+      const ticketsAux: SubCategoriesInterface = new Ticket().getTicketsByCategory(
+        category,
+        subcategory
+      )[0];
+      setTickets(ticketsAux);
+    }
+  }, [category, subcategory]);
+
+  console.log('tickets', tikets);
   return (
     <Grid container className="TicketContainer">
       {
-        tickes.events.map(ticket => (
-        <CardTicket categorie={category} subcategory={subcategory} ticket={ticket} key={ticket.id} />
+        Boolean(tikets?.events.length) && tikets?.events.map(events => (
+        <CardTicket categorie={category} subcategory={subcategory} ticket={events} key={events.id} />
         ))
       }
     </Grid>

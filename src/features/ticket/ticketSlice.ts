@@ -10,8 +10,8 @@ export interface State {
 const ticketSlice = createSlice({
   name: 'ticket',
   initialState: {
-    category: '1',
-    subcategory: '2',
+    category: '',
+    subcategory: '',
     ticket: {}
   } as State,
   reducers: {

@@ -28,6 +28,7 @@
 
         .title {
             font-weight: bold;
+            font-size: 1.1em;
         }
 
         .location {
@@ -39,11 +40,13 @@
             .place {
                 color: rgba($color: #000000, $alpha: 0.8);
                 margin-bottom: 0.2em;
+                font-size: 1em;
             }
 
             .country {
                 text-transform: uppercase;
                 color: rgba($color: #000000, $alpha: 0.5);
+                font-size: 0.8em;
             }
         }
 

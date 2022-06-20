@@ -9,6 +9,8 @@ const Body = (): JSX.Element => {
   const category = useSelector((state: any) => state.tickets.category);
   const subcategory = useSelector((state: any) => state.tickets.subcategory);
 
+  console.log('Redux', category, subcategory);
+
   return (
     <Grid container className="Body">
       <Grid container className="container">

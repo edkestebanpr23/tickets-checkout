@@ -10,6 +10,7 @@ export interface TicketInterface {
 
 export interface SubCategoriesInterface {
     category: string;
+    id: string;
     events: TicketInterface[];
 }
 

@@ -16,6 +16,7 @@ interface ListGroupProps {
     subCategories?:
       | {
           category: string;
+          id: string;
         }[]
       | [];
   };
@@ -48,7 +49,8 @@ const ListGroup = ({ category }: ListGroupProps): JSX.Element => {
               <ListItem
                 category={{
                   subcategory: subCategory.category,
-                  category: category.category
+                  category: category.category,
+                  idSubcategory: subCategory.id
                 }}
                 key={subCategory.category}
               />

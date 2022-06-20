@@ -14,6 +14,7 @@ interface ListGroupProps {
   category: {
     category: string;
     subcategory: string;
+    idSubcategory: string;
   };
 }
 
@@ -21,7 +22,7 @@ const ListItem = ({ category }: ListGroupProps): JSX.Element => {
   const dispatch = useDispatch();
 
   const onHandleClick = () => {
-    dispatch(setSubcategory(category.subcategory));
+    dispatch(setSubcategory(category.idSubcategory));
     dispatch(setCategory(category.category));
   };
 
