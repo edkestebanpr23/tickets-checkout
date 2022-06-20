@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Button, Grid, Typography } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 import './styles.scss';
-import { Ticket } from '../../../services/tickets';
 
 type Props = {
   ticket: {
@@ -18,7 +18,12 @@ type Props = {
 };
 
 const CardTicket = ({ ticket, categorie, subcategory }: Props): JSX.Element => {
-  console.log();
+  const navigation = useNavigate();
+
+  const onHandleClick = () => {
+    navigation('checkout');
+  };
+
   return (
       <Grid item xs={12} className="Card">
         <Grid container>
@@ -44,7 +49,7 @@ const CardTicket = ({ ticket, categorie, subcategory }: Props): JSX.Element => {
             {ticket.date}
             </Typography>
             <Grid className="btn-ctn">
-              <Button variant="contained">Buy tickets</Button>
+              <Button variant="contained" onClick={onHandleClick}>Buy tickets</Button>
             </Grid>
           </Grid>
         </Grid>
