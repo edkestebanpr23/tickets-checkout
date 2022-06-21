@@ -19,6 +19,28 @@ export const theme = createTheme({
       dark: '#005cb2'
     }
   },
+  typography: {
+    fontFamily: 'Arial',
+    h3: {
+      fontSize: '1.6rem',
+      fontWeight: 600
+    },
+    h5: {
+      fontSize: '1.3rem',
+      fontWeight: 600
+    },
+    h6: {
+      fontSize: '1.1rem',
+      fontWeight: 600
+    },
+    h4: {
+      fontSize: '1.4rem',
+      fontWeight: 600
+    },
+    subtitle1: {
+      fontWeight: 500
+    }
+  },
   components: {
     MuiGrid: {
       variants: [
