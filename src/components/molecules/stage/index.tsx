@@ -1,26 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Grid, Typography, Paper } from '@mui/material';
+import { Grid } from '@mui/material';
 import './styles.scss';
-import { styled } from '@mui/material/styles';
-import { Container } from '@mui/system';
+import Palco from '../../atoms/palco';
 
 type Props = {
   type: string;
 };
-
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: 'center',
-  color: theme.palette.text.secondary,
-  height: '20em',
-  wordBreak: 'break-all',
-  whiteSpace: 'pre-wrap',
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center'
-}));
 
 const Stage = ({ type }: Props): JSX.Element => {
   const space = {
@@ -57,42 +42,12 @@ const Stage = ({ type }: Props): JSX.Element => {
   return (
     <Grid container xs={8} className="Stage">
       <Grid container columnSpacing={2}>
-        <Grid item xs={1.5} className="scenario">
-          <Item className="stage">
-            <Typography variant="h6" className="scenario-text">
-              Scenario
-            </Typography>
-          </Item>
-        </Grid>
-        <Grid item xs={2.5} className="scenario">
-          <Item className="palco">
-            <Typography variant="h6" className="scenario-text">
-              Palco 1
-<p className="price">$950.000 COP</p>
-            </Typography>
-          </Item>
-        </Grid>
-        <Grid item xs={2.5} className="scenario">
-          <Item className="palco">
-            <Typography variant="h6" className="scenario-text">
-              Palco 2
-            </Typography>
-          </Item>
-        </Grid>
-        <Grid item xs={3.5} className="scenario">
-          <Item className="palco">
-            <Typography variant="h6" className="scenario-text">
-              Palco 3
-            </Typography>
-          </Item>
-        </Grid>
-        <Grid item xs className="scenario">
-          <Item className="palco">
-            <Typography variant="h6" className="scenario-text">
-              Palco 4
-            </Typography>
-          </Item>
-        </Grid>
+        <Palco data={space.scenario} />
+        {
+          space.palcos.map(palco => (
+            <Palco data={palco} />
+          ))
+        }
       </Grid>
     </Grid>
   );
