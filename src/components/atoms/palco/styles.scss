@@ -1,0 +1,32 @@
+
+.Palco {
+    .stage {
+        background-color: rgba(255,255,255,0.3);
+        color: white;
+        .scenario-text {
+            margin-right: 1em;
+            margin-left: 0;
+        }
+    }
+    .palco {
+        &:hover {
+            background-color: #01579b;
+            color: white;
+            cursor: pointer;
+        }
+    }
+    
+    .scenario-text {
+        position: absolute;
+        background: none;
+        transform: rotate(270deg);
+        margin-left: 0px;
+        left: auto;
+        top: auto;
+
+        .price {
+            margin: 0;
+            color: white;
+        }
+    }
+}

@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import { Ticket } from '../../services/tickets';
 import { TicketInterface } from '../../interface/ticket';
 import './styles.scss';
+import Stage from '../../components/molecules/stage';
 
 const EventLayout = (): JSX.Element => {
   const category = useSelector((state: any) => state.tickets.category);
@@ -51,6 +52,9 @@ const EventLayout = (): JSX.Element => {
             Quaerat, reiciendis explicabo?
           </Typography>
         </Grid>
+      </Grid>
+      <Grid container>
+        <Stage type="basic" />
       </Grid>
     </Grid>
   );
