@@ -1,0 +1,32 @@
+.EventInfo {
+    background-color: white;
+    min-height: 10em;
+    height: auto;
+    border-radius: 5px;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    padding-inline: 1.5em;
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 24px;
+        width: 100%;
+        min-height: 130px;
+        background: #FFFFFF;
+
+        .image {
+            background-image: url('https://depor.com/resizer/HQgjD5K6SDwjYkurI7FLcucvR00=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/H42EXSOSQVCQ7HWEAIFVJNKH2Y.jpg');
+            min-height: 250px;
+            background-color: #cccccc;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 5px;
+        }
+
+        
+    }
+}

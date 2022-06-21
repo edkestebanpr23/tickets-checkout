@@ -5,7 +5,7 @@ import Body from '../../components/atoms/body';
 const Checkout = (): JSX.Element => (
 <Body>
    <Grid container>
-holis
+    Holis 2
    </Grid>
 </Body>
 );
