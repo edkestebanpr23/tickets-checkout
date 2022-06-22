@@ -1,0 +1,15 @@
+.PaymentEstimate {
+
+    .divider {
+        border-bottom: 1px solid #C0C0C0;
+        padding-bottom: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .counter-ctn {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+}

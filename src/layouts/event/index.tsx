@@ -5,6 +5,7 @@ import { Ticket } from '../../services/tickets';
 import { TicketInterface } from '../../interface/ticket';
 import './styles.scss';
 import Stage from '../../components/molecules/stage';
+import PaymentEstimate from '../../components/molecules/payment-estimate';
 
 const EventLayout = (): JSX.Element => {
   const category = useSelector((state: any) => state.tickets.category);
@@ -53,8 +54,13 @@ const EventLayout = (): JSX.Element => {
           </Typography>
         </Grid>
       </Grid>
-      <Grid container>
-        <Stage type="basic" />
+      <Grid container columnSpacing={2} className="palco-info">
+        <Grid item xs={8}>
+          <Stage type="basic" />
+        </Grid>
+        <Grid item xs={4}>
+          <PaymentEstimate />
+        </Grid>
       </Grid>
     </Grid>
   );

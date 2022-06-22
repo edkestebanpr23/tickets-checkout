@@ -40,12 +40,12 @@ const Stage = ({ type }: Props): JSX.Element => {
   };
 
   return (
-    <Grid container xs={8} className="Stage">
+    <Grid item xs className="Stage">
       <Grid container columnSpacing={2}>
         <Palco data={space.scenario} />
         {
           space.palcos.map(palco => (
-            <Palco data={palco} />
+            <Palco data={palco} key={palco.value} />
           ))
         }
       </Grid>
