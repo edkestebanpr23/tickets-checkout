@@ -1,4 +1,5 @@
 import { createTheme } from '@mui/material/styles';
+import { lineHeight } from '@mui/system';
 
 declare module '@mui/material/Grid' {
     interface GridPropsVariantOverrides {
@@ -20,22 +21,22 @@ export const theme = createTheme({
     }
   },
   typography: {
-    fontFamily: 'Arial',
+    fontFamily: 'Sans-serif',
     h3: {
       fontSize: '1.6rem',
-      fontWeight: 600
+      fontWeight: 550
     },
     h5: {
       fontSize: '1.3rem',
-      fontWeight: 600
+      fontWeight: 550
     },
     h6: {
-      fontSize: '1.1rem',
-      fontWeight: 600
+      fontSize: '1.2rem',
+      fontWeight: 550
     },
     h4: {
       fontSize: '1.4rem',
-      fontWeight: 600
+      fontWeight: 550
     },
     subtitle1: {
       fontWeight: 500
