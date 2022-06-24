@@ -131,7 +131,6 @@ const PaymentEstimate = (): JSX.Element => {
             </Grid>
           </Grid>
         </Grid>
-        <PaymentForm />
       </Grid>
     </Square>
   );
