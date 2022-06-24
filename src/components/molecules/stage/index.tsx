@@ -1,8 +1,12 @@
+// @Components
 import React, { useEffect, useState } from 'react';
 import { Grid } from '@mui/material';
-import './styles.scss';
 import Palco from '../../atoms/palco';
 
+// @Styles
+import './styles.scss';
+
+// @Interfaces & Types
 type Props = {
   type: string;
 };

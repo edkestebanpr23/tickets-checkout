@@ -1,15 +1,18 @@
+// @Components
 import * as React from 'react';
 import List from '@mui/material/List';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import Collapse from '@mui/material/Collapse';
-
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
+
+// @Styles
 import './styles.scss';
 
 import ListItem from '../../atoms/list-item';
 
+// @Interfaces & Types
 interface ListGroupProps {
   category: {
     category: string;
@@ -19,13 +22,6 @@ interface ListGroupProps {
           id: string;
         }[]
       | [];
-  };
-}
-
-interface ListGroupInterface {
-  category: {
-    category: string;
-    subcategory: string;
   };
 }
 
@@ -43,12 +39,7 @@ const ListGroup = ({ category }: ListGroupProps): JSX.Element => {
         {open ? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
       {Boolean(category?.subCategories?.length) && (
-        <Collapse
-          in={open}
-          timeout="auto"
-          unmountOnExit
-
-        >
+        <Collapse in={open} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>
             {category?.subCategories?.map((subCategory) => (
               <ListItem
