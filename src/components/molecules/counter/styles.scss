@@ -1,0 +1,16 @@
+.Counter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    .text-ctn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+ 
+        .text {
+            // width: 20px;
+            text-align: center;
+        }
+    }
+}

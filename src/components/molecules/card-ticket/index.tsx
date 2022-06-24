@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Button, Grid, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { setEvent } from '../../../features/ticket/ticketSlice';
 import './styles.scss';
 
 type Props = {
@@ -19,9 +21,11 @@ type Props = {
 
 const CardTicket = ({ ticket, categorie, subcategory }: Props): JSX.Element => {
   const navigation = useNavigate();
+  const dispatch = useDispatch();
 
   const onHandleClick = () => {
-    navigation('checkout');
+    dispatch(setEvent(ticket.id));
+    navigation('event');
   };
 
   return (
