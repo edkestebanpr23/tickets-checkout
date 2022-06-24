@@ -1,20 +1,30 @@
-import React, { useState } from 'react';
+import React, { Dispatch, useState } from 'react';
+import { Button, Grid, TextField } from '@mui/material';
+import { Box } from '@mui/system';
 import ReactCreditCard, { Focused } from 'react-credit-cards';
 import 'react-credit-cards/es/styles-compiled.css';
+import './styles.scss';
 
-const PaymentForm = (): JSX.Element => {
+export type CreditCard = {
+  // eslint-disable-next-line no-empty-pattern
+  setValues: (obj: any) => any;
+};
+
+const PaymentForm = ({ setValues }: CreditCard): JSX.Element => {
   const [cvc, setCVC] = useState<string>('');
   const [expiry, setExpiry] = useState<string>('');
   const [focus, setFocus] = useState<Focused>();
   const [name, setName] = useState<string>('');
   const [number, setNumber] = useState<string>('');
-  //   state = {
-  //     cvc: '',
-  //     expiry: '',
-  //     focus: '',
-  //     name: '',
-  //     number: ''
-  //   };
+
+  const saveData = () => {
+    setValues({
+      number,
+      name,
+      expiry,
+      cvc
+    });
+  };
 
   const handleInputFocus = (e: any) => {
     setFocus(e.target.name);
@@ -40,51 +50,72 @@ const PaymentForm = (): JSX.Element => {
       default:
         break;
     }
-    // const { name, value } = e.target;
-
-    // this.setState({ [name]: value });
   };
 
   return (
-    <div id="PaymentForm">
+    <div id="PaymentForm" className="PaymentForm">
       <ReactCreditCard
         cvc={cvc}
         expiry={expiry}
-        //   focused={focus}
         focused={focus}
         name={name}
         number={number}
       />
-      <form>
-        <input
+      <Box
+        component="form"
+        sx={{
+          '& > :not(style)': { m: 1, width: '25ch' }
+        }}
+        noValidate
+        autoComplete="off"
+      >
+        <TextField
+          label="Card Number"
+          variant="standard"
           type="tel"
           name="number"
           placeholder="Card Number"
           onChange={handleInputChange}
           onFocus={handleInputFocus}
+          inputProps={{ maxLength: 16 }}
         />
-        <input
+        <TextField
+          label="Name"
+          variant="standard"
           type="tel"
           name="name"
           placeholder="Card Name"
           onChange={handleInputChange}
           onFocus={handleInputFocus}
         />
-        <input
+        <TextField
+          label="Expiry"
+          variant="standard"
           type="tel"
           name="expiry"
           placeholder="Card Expiry"
           onChange={handleInputChange}
           onFocus={handleInputFocus}
+          inputProps={{ maxLength: 4 }}
         />
-        <input
+        <TextField
+          label="CVC"
+          variant="standard"
           type="tel"
           name="cvc"
           placeholder="Card CVC"
           onChange={handleInputChange}
           onFocus={handleInputFocus}
+          inputProps={{ maxLength: 4 }}
         />
-      </form>
+      </Box>
+      <Grid container>
+        <Grid item className="btn-ctn">
+          <Button variant="contained" onClick={saveData}>
+            Add Credit Card
+          </Button>
+        </Grid>
+      </Grid>
     </div>
   );
 };
