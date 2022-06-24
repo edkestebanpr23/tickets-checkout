@@ -17,6 +17,7 @@ import Radio from '@mui/material/Radio';
 import AddIcon from '../../components/atoms/icons/add';
 import './styles.scss';
 import CreditCardIcon from '../../components/atoms/icons/credit-card';
+import PaymentForm from '../../components/atoms/credit-card';
 
 const Checkout = (props: any): JSX.Element => {
   const { state }: any = useLocation();
@@ -207,6 +208,7 @@ const Checkout = (props: any): JSX.Element => {
             </AccordionDetails>
           </Accordion>
         </Grid>
+      <PaymentForm />
       </Grid>
     </Body>
   );

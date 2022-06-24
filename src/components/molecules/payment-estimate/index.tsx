@@ -9,6 +9,7 @@ import './styles.scss';
 import Square from '../../atoms/square';
 import RemoveIcon from '@mui/icons-material/Remove';
 import Counter from '../counter';
+import PaymentForm from '../../atoms/credit-card';
 
 interface PalcoInterface {
   palco: string;
@@ -51,7 +52,7 @@ const PaymentEstimate = (): JSX.Element => {
 
   useEffect(() => {
     let subTotal = 0;
-    selected.forEach(palc => {
+    selected.forEach((palc) => {
       subTotal += palc.palcoPrice * palc.count;
     });
 
@@ -119,10 +120,18 @@ const PaymentEstimate = (): JSX.Element => {
               </Typography>
             </Grid>
             <Grid item xs className="counter-info">
-              <Button color="success" variant="contained" fullWidth onClick={onHandleClick}>Pay</Button>
+              <Button
+                color="success"
+                variant="contained"
+                fullWidth
+                onClick={onHandleClick}
+              >
+                Pay
+              </Button>
             </Grid>
           </Grid>
         </Grid>
+        <PaymentForm />
       </Grid>
     </Square>
   );
