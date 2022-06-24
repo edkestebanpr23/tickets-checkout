@@ -43,7 +43,12 @@ const ListGroup = ({ category }: ListGroupProps): JSX.Element => {
         {open ? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
       {Boolean(category?.subCategories?.length) && (
-        <Collapse in={open} timeout="auto" unmountOnExit>
+        <Collapse
+          in={open}
+          timeout="auto"
+          unmountOnExit
+
+        >
           <List component="div" disablePadding>
             {category?.subCategories?.map((subCategory) => (
               <ListItem

@@ -26,7 +26,7 @@ const ListCategories = (): JSX.Element => {
     <List
       sx={{
         width: '100%',
-        bgcolor: 'primary.main',
+        bgcolor: 'Background.paper',
         color: 'primary.contrastText'
       }}
       className="ListCategories"

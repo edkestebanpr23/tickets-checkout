@@ -1,11 +1,9 @@
-.ListCategories {
-    .header {
-        // color: red;
-    }
-
-    .MuiListItemButton-root {
-        height: 5em;
-        padding-left: 1.8em;
-        border-top: 1px solid #e0e0e02f;;
+.ListItemButton {
+    background-color: white !important;
+    color: rgba($color: #000000, $alpha: 0.83) !important;
+    border-right: 1px solid #EBEBEB !important;
+    border-bottom: 1px solid #EBEBEB !important;
+    &:hover {
+        background-color: rgb(240, 240, 240) !important;
     }
 }
