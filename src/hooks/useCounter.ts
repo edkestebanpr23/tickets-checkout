@@ -1,5 +1,7 @@
+// @Components
 import { useState } from 'react';
 
+// @Interface & Types
 interface Props {
     initialCount: number;
     min?: number;

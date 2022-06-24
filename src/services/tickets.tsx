@@ -1,5 +1,8 @@
 /* eslint-disable max-len */
+// @Scripts
 import { config } from '../config';
+
+// @Interfaces & Types
 import { CategoryInterface, SubCategoriesInterface, TicketInterface } from '../interface/ticket';
 
 export class Ticket {

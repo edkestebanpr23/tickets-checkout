@@ -1,9 +1,12 @@
+// @Components
 import * as React from 'react';
 import { Grid } from '@mui/material';
-import './styles.scss';
 import ListCategories from '../../components/organism/list-categories';
 import TicketContainer from '../../components/molecules/ticket-container';
 import { useSelector } from 'react-redux';
+
+// @Styles
+import './styles.scss';
 
 const TicketsLayout = (): JSX.Element => {
   const category = useSelector((state: any) => state.tickets.category);
