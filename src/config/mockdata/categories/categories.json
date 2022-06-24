@@ -111,11 +111,20 @@
                 "id": "4",
                 "events": [
                     {
+                        "event": "Rey Leon Musical",
+                        "place": "Movistar Arena",
+                        "location": "Bogotá - Colombia",
+                        "hour": "17:00 hrs",
+                        "date": "Jul 22",
+                        "id": "3",
+                        "image": "https://cloudfront-us-east-1.images.arcpublishing.com/semana/UYCHPHRLBZHADJZV5VMDPP7YV4.jpg"
+                    },
+                    {
                         "event": "Frozen, A Musical Spectacular",
                         "place": "Pablo Tobon Auditorium",
                         "location": "Medellín - Colombia",
                         "hour": "14:30 hrs",
-                        "date": "Aug 15",
+                        "date": "Aug 14",
                         "id": "1",
                         "image": "https://lumiere-a.akamaihd.net/v1/images/musical-frozen-5x2_db7a057f.png"
                     },
@@ -127,15 +136,6 @@
                         "date": "Aug 15",
                         "id": "2",
                         "image": "https://lumiere-a.akamaihd.net/v1/images/musical-frozen-5x2_db7a057f.png"
-                    },
-                    {
-                        "event": "Rey Leon Musical",
-                        "place": "Movistar Arena",
-                        "location": "Bogotá - Colombia",
-                        "hour": "17:00 hrs",
-                        "date": "Jul 22",
-                        "id": "3",
-                        "image": "https://cloudfront-us-east-1.images.arcpublishing.com/semana/UYCHPHRLBZHADJZV5VMDPP7YV4.jpg"
                     }
                 ]
             },

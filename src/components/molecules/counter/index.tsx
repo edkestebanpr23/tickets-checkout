@@ -1,10 +1,14 @@
-import React, { useEffect, useState } from 'react';
+// @Component
+import React, { useEffect } from 'react';
 import { Grid, IconButton, Typography } from '@mui/material';
-import './styles.scss';
 import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
 import { useCounter } from '../../../hooks/useCounter';
 
+// @Styles
+import './styles.scss';
+
+// @Interfaces & Types
 interface CounterInterface {
     onChange: (n: number) => void;
 }

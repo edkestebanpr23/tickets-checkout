@@ -1,16 +1,15 @@
+// @Components
 import React, { useEffect, useState } from 'react';
-import {
-  Button, Divider, Grid, IconButton, Typography
-} from '@mui/material';
+import { Button, Grid, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { setEvent } from '../../../features/ticket/ticketSlice';
-import './styles.scss';
 import Square from '../../atoms/square';
-import RemoveIcon from '@mui/icons-material/Remove';
 import Counter from '../counter';
-import PaymentForm from '../../atoms/credit-card';
 
+// @Styles
+import './styles.scss';
+
+// @Interfaces & Types
 interface PalcoInterface {
   palco: string;
   palcoPrice: number;

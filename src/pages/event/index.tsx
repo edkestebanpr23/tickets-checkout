@@ -1,3 +1,4 @@
+// @Components
 import React from 'react';
 import Body from '../../components/atoms/body';
 import EventLayout from '../../layouts/event';

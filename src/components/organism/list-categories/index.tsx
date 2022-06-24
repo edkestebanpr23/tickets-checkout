@@ -1,14 +1,13 @@
+// @Components
 import * as React from 'react';
 import ListSubheader from '@mui/material/ListSubheader';
 import List from '@mui/material/List';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import Collapse from '@mui/material/Collapse';
-import ExpandLess from '@mui/icons-material/ExpandLess';
-import ExpandMore from '@mui/icons-material/ExpandMore';
-import './styles.scss';
 import ListGroup from '../../molecules/list-group';
 
+// @Styles
+import './styles.scss';
+
+// @Scripts
 import { config } from '../../../config';
 
 const {
@@ -26,7 +25,7 @@ const ListCategories = (): JSX.Element => {
     <List
       sx={{
         width: '100%',
-        bgcolor: 'primary.main',
+        bgcolor: 'Background.paper',
         color: 'primary.contrastText'
       }}
       className="ListCategories"

@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/jsx-one-expression-per-line */
+// @Components
 import React, { useState } from 'react';
 import {
   Accordion,
@@ -16,9 +17,11 @@ import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Radio from '@mui/material/Radio';
 import AddIcon from '../../components/atoms/icons/add';
-import './styles.scss';
 import CreditCardIcon from '../../components/atoms/icons/credit-card';
 import PaymentForm from '../../components/atoms/credit-card';
+
+// @Styles
+import './styles.scss';
 
 const CheckoutLayout = (): JSX.Element => {
   const { state }: any = useLocation();
@@ -110,7 +113,10 @@ const CheckoutLayout = (): JSX.Element => {
                         .substr(0, 2)}/${cardData?.expiry?.substr(2)}`}
                     </Typography>
                     <Typography>
-                      <span className="a-link" onClick={() => setShowCard(true)}>
+                      <span
+                        className="a-link"
+                        onClick={() => setShowCard(true)}
+                      >
                         Edit
                       </span>
                       {' | '}

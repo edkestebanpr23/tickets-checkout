@@ -1,10 +1,14 @@
+// @Components
 import * as React from 'react';
 import { Button, Grid, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { setEvent } from '../../../features/ticket/ticketSlice';
+
+// @Styles
 import './styles.scss';
 
+// @Interfaces & Types
 type Props = {
   ticket: {
     event: string;

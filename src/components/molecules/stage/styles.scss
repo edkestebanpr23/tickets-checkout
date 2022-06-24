@@ -1,18 +1,21 @@
 .Stage {
     margin-top: 2em;
-    background-color: rgba(1,87,155,0.6);
+    background-color: rgba(1, 87, 155, 0.6);
     width: 100%;
     padding: 8px;
     border-radius: 5px;
+
     .scenario {
         .stage {
-            background-color: rgba(255,255,255,0.3);
+            background-color: rgba(255, 255, 255, 0.3);
             color: white;
+
             .scenario-text {
                 margin-right: 1em;
                 margin-left: 0;
             }
         }
+
         .palco {
             &:hover {
                 background-color: #01579b;
@@ -20,7 +23,7 @@
                 cursor: pointer;
             }
         }
-        
+
         .scenario-text {
             position: absolute;
             background: none;

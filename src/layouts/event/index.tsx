@@ -1,11 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import { Card, Grid, Typography } from '@mui/material';
+// @Components
+import React from 'react';
+import { Grid, Typography } from '@mui/material';
 import { useSelector } from 'react-redux';
 import { Ticket } from '../../services/tickets';
 import { TicketInterface } from '../../interface/ticket';
-import './styles.scss';
 import Stage from '../../components/molecules/stage';
 import PaymentEstimate from '../../components/molecules/payment-estimate';
+
+// @Styles
+import './styles.scss';
 
 const EventLayout = (): JSX.Element => {
   const category = useSelector((state: any) => state.tickets.category);

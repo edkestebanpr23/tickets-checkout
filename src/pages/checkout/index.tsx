@@ -1,7 +1,10 @@
+// @Components
 import * as React from 'react';
 import Body from '../../components/atoms/body';
-import './styles.scss';
 import CheckoutLayout from '../../layouts/checkout';
+
+// @Styles
+import './styles.scss';
 
 const Checkout = (): JSX.Element => (
     <Body>

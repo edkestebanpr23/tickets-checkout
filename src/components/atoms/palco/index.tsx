@@ -1,10 +1,14 @@
+// @Components
 import React, { useEffect, useState } from 'react';
 import { Grid, Typography, Paper } from '@mui/material';
-import './styles.scss';
 import { styled } from '@mui/material/styles';
 import { useSelector, useDispatch } from 'react-redux';
 import { setPalco, setPalcoPrice } from '../../../features/ticket/ticketSlice';
 
+// @Styles
+import './styles.scss';
+
+// @Interfaces & Types
 export interface PalcoInterface {
   data: {
     type?: string;
