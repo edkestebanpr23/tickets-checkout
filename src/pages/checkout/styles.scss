@@ -1,13 +1,14 @@
 .Checkout {
     padding: 1em;
 
-    
+
 
     .ctn {
-        border: 1px solid #C0C0C0;
+        border: 1px solid #bfbfbf;
         padding: 1em;
         margin-bottom: 1em;
         border-radius: 4px;
+
         .bg-blue {
             background-color: #f2f6fc;
             border: 2px solid #e8f0fb;
@@ -17,8 +18,9 @@
     }
 
     .ctn-right {
-        border: 1px solid #C0C0C0;
+        border: 1px solid #bfbfbf;
         border-radius: 4px;
+
         .MuiAccordion-root {
             box-shadow: none;
         }
@@ -28,10 +30,12 @@
         margin-left: 0;
         margin-right: 0;
     }
+
     .with-icon {
         width: 100%;
         display: flex;
         gap: 0.5em;
+
         .ckeckcircle {
             color: #5eb04e;
         }
@@ -39,27 +43,48 @@
 
     a {
         text-decoration: none;
+
         &.a-link {
             color: #3471d8;
+            font-weight: 550;
         }
     }
-    
+
+    .add-new-card-ctn {
+        border-bottom: 1px solid #ebebeb;
+        height: 60px;
+
+        .MuiGrid-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    .add-icon {
+        color: #3471d8;
+        font-size: 40px;
+    }
+
     p {
         width: 100%;
 
         &.text-df {
             // margin-top: 1em;
         }
+
         &.note {
             font-size: 0.9em;
             font-weight: 550;
             margin-bottom: 0.7em;
         }
+
         &.note-small {
             font-size: 0.7em;
             font-weight: 550;
             margin-top: 1em;
         }
+
         &.text-df-bold {
             font-size: 0.9em;
             font-weight: 500;
@@ -73,12 +98,15 @@
         font-weight: 600;
         margin-bottom: 0.3em;
         margin-top: 10px;
+
         &.special-ml {
             margin-left: 1em;
         }
+
         &.special-mt {
             margin-top: 0.5em;
         }
+
         &.not-mt {
             margin-top: 0;
         }

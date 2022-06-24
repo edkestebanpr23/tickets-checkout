@@ -14,7 +14,9 @@ import { useLocation } from 'react-router-dom';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Radio from '@mui/material/Radio';
+import AddIcon from '../../components/atoms/icons/add';
 import './styles.scss';
+import CreditCardIcon from '../../components/atoms/icons/credit-card';
 
 const Checkout = (props: any): JSX.Element => {
   const { state }: any = useLocation();
@@ -70,8 +72,8 @@ const Checkout = (props: any): JSX.Element => {
                     <Typography>
                       <a href="#" className="a-link">
                         Edit
-                      </a>{' '}
-                      |{' '}
+                      </a>
+                      {' | '}
                       <a href="#" className="a-link">
                         Delete
                       </a>
@@ -79,6 +81,19 @@ const Checkout = (props: any): JSX.Element => {
                   </Grid>
                   <Grid />
                 </Grid>
+              </Grid>
+            </Grid>
+            <Grid container gap="1em" className="add-new-card-ctn">
+              <Grid item>
+                 <AddIcon />
+              </Grid>
+              <Grid item>
+                <CreditCardIcon />
+              </Grid>
+              <Grid item>
+                <a href="#" className="a-link">
+                  Add New Card
+                </a>
               </Grid>
             </Grid>
             <Grid>
