@@ -1,8 +1,11 @@
+// @Components
 import React, { Dispatch, useState } from 'react';
 import { Button, Grid, TextField } from '@mui/material';
 import { Box } from '@mui/system';
 import ReactCreditCard, { Focused } from 'react-credit-cards';
 import 'react-credit-cards/es/styles-compiled.css';
+
+// @Styles
 import './styles.scss';
 
 export type CreditCard = {

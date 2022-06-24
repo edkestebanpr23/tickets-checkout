@@ -1,14 +1,17 @@
+// @Components
 import * as React from 'react';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
-import './styles.scss';
-
 import { useDispatch } from 'react-redux';
 import {
   setCategory,
   setSubcategory
 } from '../../../features/ticket/ticketSlice';
 
+// @Styles
+import './styles.scss';
+
+// @Interfaces & Types
 interface ListGroupProps {
   category: {
     category: string;
