@@ -168,8 +168,8 @@ const CheckoutLayout = (): JSX.Element => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item xs={5} className="ctn-right">
-        <Accordion>
+      <Grid item xs={12} md={5} className="ctn-right">
+        <Accordion defaultExpanded>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"

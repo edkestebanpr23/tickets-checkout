@@ -20,7 +20,7 @@ const EventLayout = (): JSX.Element => {
     subcategory || '1',
     event || '1'
   );
-  console.log(ticket);
+
   return (
     <Grid container className="EventInfo">
       <Grid className="card">
@@ -57,11 +57,11 @@ const EventLayout = (): JSX.Element => {
           </Typography>
         </Grid>
       </Grid>
-      <Grid container columnSpacing={2} className="palco-info">
-        <Grid item xs={8}>
+      <Grid container columnSpacing={2} className="palco-info" rowGap={2}>
+        <Grid item xs={12} md={8}>
           <Stage type="basic" />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} md={4}>
           <PaymentEstimate />
         </Grid>
       </Grid>

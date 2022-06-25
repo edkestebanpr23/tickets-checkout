@@ -24,7 +24,6 @@ export class Ticket {
       }
       return [];
     } catch (error) {
-      console.log(error);
       return [];
     }
   }
@@ -43,7 +42,6 @@ export class Ticket {
       }
       return null;
     } catch (error) {
-      console.log(error);
       return null;
     }
   }
