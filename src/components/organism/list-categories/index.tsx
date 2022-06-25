@@ -9,6 +9,7 @@ import './styles.scss';
 
 // @Scripts
 import { config } from '../../../config';
+import { Typography } from '@mui/material';
 
 const {
   mockdata: { categories }
@@ -39,10 +40,11 @@ const ListCategories = (): JSX.Element => {
           sx={{
             width: '100%',
             bgcolor: 'primary.main',
-            color: 'primary.contrastText'
+            color: 'primary.contrastText',
+            paddingTop: '1em'
           }}
         >
-          Categories
+          <Typography variant="h5" className="sub-header">Categories</Typography>
         </ListSubheader>
       )}
     >

@@ -11,6 +11,10 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
+import { useNavigate } from 'react-router-dom';
+
+// @Styles
+import './styles.scss';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -54,8 +58,15 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   }
 }));
 
-const HeaderNav = (): JSX.Element => (
-  <Box sx={{ flexGrow: 1 }}>
+const HeaderNav = (): JSX.Element => {
+  const navigate = useNavigate();
+
+  const goHome = () => {
+    navigate('/');
+  };
+
+  return (
+  <Box sx={{ flexGrow: 1 }} className="HeaderNav">
     <AppBar position="static">
       <Toolbar>
         <IconButton
@@ -72,6 +83,8 @@ const HeaderNav = (): JSX.Element => (
           noWrap
           component="div"
           sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+          className="title-header"
+          onClick={goHome}
         >
           Tickets Project
         </Typography>
@@ -87,6 +100,7 @@ const HeaderNav = (): JSX.Element => (
       </Toolbar>
     </AppBar>
   </Box>
-);
+  );
+};
 
 export default HeaderNav;
