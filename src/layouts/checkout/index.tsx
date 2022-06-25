@@ -3,7 +3,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/jsx-one-expression-per-line */
 // @Components
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Accordion,
   AccordionDetails,
@@ -12,7 +12,7 @@ import {
   Grid,
   Typography
 } from '@mui/material';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Radio from '@mui/material/Radio';
@@ -28,12 +28,36 @@ const CheckoutLayout = (): JSX.Element => {
   const { selected, subtotal } = state;
   const [showCard, setShowCard] = useState<boolean>(false);
   const [cardData, setCardData] = useState<any>({});
+  const [selectedCard, setSelectedCard] = useState<boolean>(false);
+  const navigation = useNavigate();
+
   const fee = 45000;
   const orderPF = 5200;
   const totalPayment = fee + orderPF + (subtotal || 0);
 
+  useEffect(() => {
+    if (!cardData.name) {
+      setSelectedCard(false);
+    }
+  }, [cardData]);
+
   const onHandleClick = () => {
-    console.log('Pay');
+    navigation('/success');
+  };
+
+  const onEditClick = () => {
+    setShowCard(true);
+  };
+
+  const onDeleteClick = () => {
+    setShowCard(true);
+    setCardData({});
+  };
+
+  const toggleSelectedCard = () => {
+    if (cardData?.name) {
+      setSelectedCard(card => !card);
+    }
   };
 
   const addCreditCard = () => {
@@ -94,7 +118,7 @@ const CheckoutLayout = (): JSX.Element => {
           ) : (
             <Grid container className="bg-blue">
               <Grid item xs={1}>
-                <Radio />
+                <Radio checked={selectedCard} onClick={toggleSelectedCard} />
               </Grid>
               <Grid item xs>
                 <Grid container>
@@ -115,14 +139,14 @@ const CheckoutLayout = (): JSX.Element => {
                     <Typography>
                       <span
                         className="a-link"
-                        onClick={() => setShowCard(true)}
+                        onClick={onEditClick}
                       >
                         Edit
                       </span>
                       {' | '}
                       <span
                         className="a-link"
-                        onClick={() => setShowCard(true)}
+                        onClick={onDeleteClick}
                       >
                         Delete
                       </span>
@@ -167,14 +191,14 @@ const CheckoutLayout = (): JSX.Element => {
           <AccordionDetails>
             <Typography className="subtitle not-mt">Tickets</Typography>
             {selected.length
-              && selected.map((pal: any) => {
+              && selected.map((pal: any, index: number) => {
                 try {
                   // eslint-disable-next-line no-unsafe-optional-chaining
                   const pCount = pal?.count || 1;
                   const pPalcoPrice = pal?.palcoPrice || 458;
                   const multi = pCount * pPalcoPrice;
                   return (
-                    <Grid container>
+                    <Grid container key={index}>
                       <Grid item xs>
                         <Typography className="text-df">
                           {`${pal?.palco}: $${pal?.palcoPrice} COP x ${pal?.count}`}
@@ -188,7 +212,7 @@ const CheckoutLayout = (): JSX.Element => {
                   );
                 } catch (e) {
                   return (
-                    <Grid container>
+                    <Grid container key={index}>
                       <Grid item xs>
                         <Typography className="text-df">
                           Resale tickets: $229.00 x 2
@@ -253,6 +277,7 @@ const CheckoutLayout = (): JSX.Element => {
               variant="contained"
               fullWidth
               onClick={onHandleClick}
+              disabled={!selectedCard}
             >
               Place Order
             </Button>

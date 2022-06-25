@@ -73,7 +73,7 @@ const HeaderNav = (): JSX.Element => (
           component="div"
           sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
         >
-          MUI
+          Tickets Project
         </Typography>
         <Search>
           <SearchIconWrapper>

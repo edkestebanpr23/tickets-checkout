@@ -1,3 +1,33 @@
+# Tickets Project
+
+## Installation
+
+Download and clone this repository using
+```
+git clone https://github.com/edkestebanpr23/tickets-checkout.git
+```
+Move to project
+```
+cd tickets-checkout
+```
+Install dependencies with
+```
+npm install
+```
+Finally, run this project using
+```
+npm start
+```
+
+### Avaliable Scripts
+
+React Boilerplate has many other scripts that are pretty helpful for any Dev Team.
+
+```
+npm run lint
+```
+You can use this for checking if any change in the code is syntactically correct according to the project's structure.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
