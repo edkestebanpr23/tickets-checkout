@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Grid, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import Square from '../../atoms/square';
 import Counter from '../counter';
 
@@ -59,10 +59,8 @@ const PaymentEstimate = (): JSX.Element => {
   }, [selected]);
 
   const navigation = useNavigate();
-  const dispatch = useDispatch();
 
   const onHandleClick = () => {
-    // dispatch(setEvent(ticket.id));
     navigation('/checkout', {
       state: {
         selected,
@@ -74,9 +72,6 @@ const PaymentEstimate = (): JSX.Element => {
   return (
     <Square>
       <Grid container className="PaymentEstimate">
-        {/* <Grid item xs={12} height="2.5em">
-          <Typography variant="h6">Your selection:</Typography>
-        </Grid> */}
         <Grid item xs={12} className="divider">
           <Grid container>
             <Grid item xs={4}>
@@ -90,7 +85,7 @@ const PaymentEstimate = (): JSX.Element => {
           </Grid>
         </Grid>
         {palcos.length
-          && palcos.map((pal) => (
+          ? palcos.map((pal) => (
             <Grid item xs={12} className="counter-info" key={pal.palco}>
               <Grid container>
                 <Grid item xs>
@@ -107,7 +102,7 @@ const PaymentEstimate = (): JSX.Element => {
                 </Grid>
               </Grid>
             </Grid>
-          ))}
+          )) : (<Typography variant="subtitle1">Please select locations...</Typography>)}
         <Grid item xs={12} className="counter-info">
           <Grid container>
             <Grid item xs={4}>
