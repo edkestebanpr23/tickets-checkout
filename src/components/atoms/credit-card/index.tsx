@@ -36,7 +36,6 @@ const PaymentForm = ({ setValues }: CreditCard): JSX.Element => {
   const handleInputChange = (e: any) => {
     // eslint-disable-next-line @typescript-eslint/no-shadow
     const { name, value } = e.target;
-    console.log(name, value);
     switch (name) {
       case 'number':
         setNumber(value);

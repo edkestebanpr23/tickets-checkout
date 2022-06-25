@@ -1,0 +1,32 @@
+.SuccessLayout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    .card-success {
+        border: 2px solid #4caf50;
+        padding-inline: 1em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        border-radius: 5px;
+        max-width: 500px;
+        .ckeckcircle {
+            color: #5eb04e;
+            font-size: 40px;
+        }
+    }
+
+}
+
+.GoHome {
+    padding-left: 2em;
+    padding-bottom: 1.5em;
+    .link {
+        color: #00579b;
+        &:hover {
+            cursor: pointer;
+            color: #013d6a;
+        }
+    }
+}
